@@ -17,6 +17,7 @@
 		9D13A1F419E5422E00375568 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13A1F319E5422E00375568 /* SettingViewController.swift */; };
 		9D13A1F619E5424F00375568 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13A1F519E5424F00375568 /* MainTabViewController.swift */; };
 		9D13A1F919E57A8300375568 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13A1F819E57A8300375568 /* TitleView.swift */; };
+		9DE483FF19E588A3008E02DD /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE483FE19E588A3008E02DD /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		9D13A1F319E5422E00375568 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9D13A1F519E5424F00375568 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		9D13A1F819E57A8300375568 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		9DE483FE19E588A3008E02DD /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		9D13A1C219E5328300375568 = {
 			isa = PBXGroup;
 			children = (
+				9DE483FD19E58886008E02DD /* model */,
 				9D13A1FA19E57A9400375568 /* view */,
 				9D13A1F819E57A8300375568 /* TitleView.swift */,
 				9D13A1F719E5425500375568 /* controller */,
@@ -140,6 +143,14 @@
 			children = (
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		9DE483FD19E58886008E02DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9DE483FE19E588A3008E02DD /* GameModel.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				9D13A1D319E5328300375568 /* ViewController.swift in Sources */,
 				9D13A1D119E5328300375568 /* AppDelegate.swift in Sources */,
 				9D13A1F419E5422E00375568 /* SettingViewController.swift in Sources */,
+				9DE483FF19E588A3008E02DD /* GameModel.swift in Sources */,
 				9D13A1F919E57A8300375568 /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +451,7 @@
 				9D13A1EC19E5328300375568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D13A1ED19E5328300375568 /* Build configuration list for PBXNativeTarget "swift2048-001Tests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +460,7 @@
 				9D13A1EF19E5328300375568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

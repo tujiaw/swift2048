@@ -14,9 +14,11 @@ class MainViewController:UIViewController {
     var width:CGFloat = 50
     var padding:CGFloat = 6
     var backgrounds:Array<UIView>
+    var gmodel:GameModel
     
     override init() {
         self.backgrounds = Array<UIView>()
+        self.gmodel = GameModel(dimension: self.dimension)
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -27,7 +29,10 @@ class MainViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBackground()
-        getNumber()
+        for i in 0...16 {
+            getNumber()
+        }
+        
     }
     
     func setupBackground() {
@@ -56,6 +61,16 @@ class MainViewController:UIViewController {
         }
         let col = Int(arc4random_uniform(UInt32(dimension)))
         let row = Int(arc4random_uniform(UInt32(dimension)))
+        if gmodel.isFull() {
+            println("is full")
+            return
+        }
+        
+        if gmodel.setPosition(row, col: col, value: seed) == false {
+            getNumber()
+            return
+        }
+        
         insertTitle((row, col), value:seed)
     }
     
